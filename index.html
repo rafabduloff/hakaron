@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Космический Исследователь</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <div class="logo">Космический Исследователь</div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#planets">Планеты</a></li>
+                <li><a href="#missions">Миссии</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#facts">Факты</a></li>
+                <li><a href="#quiz">Квиз</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Добро пожаловать в Космос</h1>
+            <p>Исследуйте тайны Вселенной вместе с нами</p>
+            <a href="#planets" class="cta-button">Начать путешествие</a>
+        </section>
+
+        <section id="planets" class="planets">
+            <h2>Планеты Солнечной системы</h2>
+            <div class="planet-slider">
+                <button class="slider-arrow prev">&lt;</button>
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <!-- Planet cards will be inserted here by JavaScript -->
+                    </div>
+                </div>
+                <button class="slider-arrow next">&gt;</button>
+            </div>
+        </section>
+
+        <section id="missions" class="missions">
+            <h2>Космические миссии</h2>
+            <div class="mission-timeline">
+                <!-- Mission timeline will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Галерея космических изображений</h2>
+            <div class="gallery-slider">
+                <button class="gallery-arrow prev">&lt;</button>
+                <div class="gallery-track">
+                    <!-- Gallery items will be inserted here by JavaScript -->
+                </div>
+                <button class="gallery-arrow next">&gt;</button>
+            </div>
+        </section>
+
+        <section id="facts" class="facts">
+            <h2>Интересные факты о космосе</h2>
+            <div class="fact-container">
+                <!-- Fact cards will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="quiz" class="quiz">
+            <h2>Проверьте свои знания о космосе</h2>
+            <div id="quiz-container">
+                <!-- Quiz questions will be inserted here by JavaScript -->
+            </div>
+            <button id="next-question">Следующий вопрос</button>
+            <button id="submit-quiz" style="display: none;">Завершить квиз</button>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Свяжитесь с нами</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О нас</h3>
+                <p>Мы - команда энтузиастов космоса, стремящихся поделиться знаниями о Вселенной со всеми.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#planets">Планеты</a></li>
+                    <li><a href="#missions">Миссии</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#facts">Факты</a></li>
+                    <li><a href="#quiz">Квиз</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Подпишитесь на нас</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">TW</a>
+                    <a href="#" class="social-icon">IG</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Космический Исследователь. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h3>Спасибо за ваше сообщение!</h3>
+            <p>Мы свяжемся с вами в ближайшее время.</p>
+            <button id="close-popup">Закрыть</button>
+        </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
