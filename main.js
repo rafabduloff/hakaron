@@ -1,4 +1,3 @@
-// Planet slider functionality
 const planetSlider = document.querySelector('.planet-slider');
 const planetTrack = planetSlider.querySelector('.slider-track');
 const planetCards = planetTrack.querySelectorAll('.planet-card');
@@ -20,7 +19,6 @@ nextButton.addEventListener('click', () => {
     showPlanet(currentIndex);
 });
 
-// Gallery slider functionality
 const gallerySlider = document.querySelector('.gallery-slider');
 const galleryTrack = gallerySlider.querySelector('.gallery-track');
 const galleryItems = galleryTrack.querySelectorAll('.gallery-item');
@@ -42,14 +40,13 @@ galleryNextButton.addEventListener('click', () => {
     showGalleryItem(currentGalleryIndex);
 });
 
-// Quiz functionality
 const quizContainer = document.getElementById('quiz-container');
 const nextQuestionButton = document.getElementById('next-question');
 const submitQuizButton = document.getElementById('submit-quiz');
 let currentQuestion = 0;
 const questions = quizContainer.querySelectorAll('.quiz-question');
 
-const correctAnswers = [1, 1, 0]; // Индексы правильных ответов для каждого вопроса
+const correctAnswers = [1, 1, 0];
 
 function showQuestion(index) {
     questions.forEach((question, i) => {
@@ -90,7 +87,6 @@ submitQuizButton.addEventListener('click', () => {
     alert(`Квиз завершен! Ваш результат: ${score} из ${totalQuestions} (${percentage.toFixed(2)}%)`);
 });
 
-// Contact form functionality
 const contactForm = document.getElementById('contact-form');
 const popup = document.getElementById('popup');
 const closePopupButton = document.getElementById('close-popup');
@@ -113,7 +109,6 @@ closePopupButton.addEventListener('click', () => {
     popup.style.display = 'none';
 });
 
-// Mobile menu functionality
 const burgerMenu = document.querySelector('.burger-menu');
 const navLinks = document.querySelector('.nav-links');
 
@@ -121,7 +116,6 @@ burgerMenu.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// Initialize all functionalities
 document.addEventListener('DOMContentLoaded', () => {
     showPlanet(currentIndex);
     showGalleryItem(currentGalleryIndex);
