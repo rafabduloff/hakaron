@@ -26,7 +26,6 @@ body {
   margin: 0 auto;
 }
 
-/* Header and Navigation */
 header {
   background: linear-gradient(to right, rgba(10, 25, 47, 0.9), rgba(23, 42, 69, 0.9));
   position: fixed;
@@ -131,7 +130,6 @@ header {
   }
 }
 
-/* Hero Section */
 .hero {
   height: 100vh;
   display: flex;
@@ -190,7 +188,6 @@ header {
   box-shadow: 0 6px 20px rgba(100, 255, 218, 0.6);
 }
 
-/* Planets Section */
 .planets {
   padding: 5rem 10%;
   background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
@@ -279,7 +276,6 @@ header {
   right: 10px;
 }
 
-/* Missions Section */
 .missions {
   padding: 5rem 10%;
   background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
@@ -472,7 +468,6 @@ header {
   right: 10px;
 }
 
-/* Facts Section */
 .facts {
   padding: 5rem 10%;
   background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
@@ -515,7 +510,6 @@ header {
   margin-bottom: 1rem;
 }
 
-/* Quiz Section */
 .quiz {
   padding: 5rem 10%;
   background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
@@ -589,7 +583,6 @@ header {
   box-shadow: 0 6px 20px rgba(100, 255, 218, 0.6);
 }
 
-/* Contact Section */
 .contact {
   padding: 5rem 10%;
   background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
@@ -647,7 +640,6 @@ header {
   box-shadow: 0 6px 20px rgba(100, 255, 218, 0.6);
 }
 
-/* Footer */
 footer {
   background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
   color: var(--text-color-light);
@@ -741,7 +733,6 @@ footer {
   to { transform: scale(1); opacity: 1; }
 }
 
-/* Apply animations */
 .hero h1, .hero p, .cta-button {
   animation: fadeIn 1s ease-out;
 }
@@ -762,7 +753,6 @@ footer {
   animation: fadeIn 0.5s ease-out;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .hero h1 {
     font-size: 3.5rem;
